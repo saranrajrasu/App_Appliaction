@@ -1,0 +1,17 @@
+<h2 style="color: green">App-Application</h2>
+<div >
+  <table style="width:100%" class="table table-striped">
+  <div>
+    <tr>
+      <th style="color: #00FF00">TITLE</th>
+      <th style="color: #00FF00">IMAGE</th>
+      <th style="color: #00FF00">LINK</th>
+    </tr>
+    <tr ng-repeat="a in allData">
+      <td >{{ a.title }}</td>
+      <td ng-click="loadimage()">{{ a.image }}</td>
+      <td>{{ a.link }}</td>
+    </tr>
+  </div>
+  </table>
+</div>

@@ -1,0 +1,25 @@
+<h3>Welcome To Category Data page</h3>
+<div>
+  <table style="width:100%">
+  <div ng-show="allData.category">
+    <tr ng-repeat="a in allData">
+      <td>
+        <table  class="table table-striped">
+          <!-- <div ng-if="a.category">{{a.category.category1}} -->
+          <tr>
+            <th style="height: 41px;width: 275px;color: #00FF00">CATEGORY_TITLE</th>
+            <th style="height: 41px;width: 275px;color: #00FF00">CATEGORY_IMAGE</th>
+            <th style="height: 41px;width: 275px;color: #00FF00">CATEGORY_LINK</th>
+          </tr>
+          <tr ng-repeat = "s in a.category.category1">
+            <td>{{s.title2}}</td>
+            <td>{{s.image}}</td>
+            <td>{{s.link}}</td>
+          </tr>
+  </div>
+        </div>
+      </table>
+    </td>
+  </tr>
+</table>
+</div>
